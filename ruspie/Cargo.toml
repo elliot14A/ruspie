@@ -6,8 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-roapi = { git = "https://github.com/roapi/roapi", rev = "ae13d3bc9ea8155d048f3c92c56fdd5fad0e94f3" }
-columnq = { git = "https://github.com/roapi/roapi", rev = "ae13d3bc9ea8155d048f3c92c56fdd5fad0e94f3" }
+roapi = { git = "https://github.com/roapi/roapi", rev = "df39a13d3fbcb22e0766031cdcdb087ed14e38f8" }
+columnq = { git = "https://github.com/roapi/roapi", rev = "df39a13d3fbcb22e0766031cdcdb087ed14e38f8" }
 axum = { version = "0.5", features = ["default", "http2"] }
 tokio = { version = "1", features = ["full"] }
 anyhow = "1"
@@ -24,10 +24,10 @@ rand = "0.8.5"
 roaring = { version = "0.10.0", features = ["serde"] }
 sha2 = "0.10.6"
 time = { version = "0.3.15", features = [
-    "serde-well-known",
-    "formatting",
-    "parsing",
-    "macros",
+  "serde-well-known",
+  "formatting",
+  "parsing",
+  "macros",
 ] }
 uuid = { version = "1.1.2", features = ["serde", "v4"] }
 heed = "0.11.0"
