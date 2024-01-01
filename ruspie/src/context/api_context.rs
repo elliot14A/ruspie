@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::{collections::HashMap, sync::Arc};
 
 use axum::async_trait;
 use columnq::{
@@ -176,7 +176,7 @@ impl RoapiContext for RawRuspieApiContext {
     }
 
     #[inline]
-    async fn sql_to_df(&self, _query: &str) -> Result<DataFrame, DataFusionError> {
+    async fn sql_to_df(&self, _query: &str) -> Result<Arc<DataFrame>, DataFusionError> {
         unreachable!()
     }
 
