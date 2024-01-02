@@ -1,7 +1,7 @@
 [workspace]
 resolver = "2"
 
-members = ["ruspie", "robinpie", "roapi", "columnq"]
+members = ["ruspie", "robinpie"]
 
 [profile.dev]
 split-debuginfo = "unpacked"
